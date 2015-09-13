@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/center"
+            android:stateListAnimator="@drawable/tocenter"
+            style="@style/touchboard" />
+
+        <TextView
+            android:id="@+id/up"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/center"
+            style="@style/touchboard"
+            android:stateListAnimator="@drawable/toup"
+            />
+
+        <TextView
+            android:id="@+id/down"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/center"
+            style="@style/touchboard"
+            android:stateListAnimator="@drawable/todown"
+             
+            />
+        <TextView
+            android:id="@+id/left"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/center"
+            android:stateListAnimator="@drawable/toleft"
+            style="@style/touchboard"
+            />
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/center"
+            style="@style/touchboard"
+            android:stateListAnimator="@drawable/toright"
+            />
+
+        <TextView
+            android:id="@+id/rightup"
+            android:layout_above="@id/center"
+            android:layout_toRightOf="@id/center"
+            style="@style/touchboard"
+            android:stateListAnimator="@drawable/toupright"
+            />
+        <TextView
+            android:id="@+id/leftup"
+            android:stateListAnimator="@drawable/toupleft"
+            android:layout_above="@id/center"
+            android:layout_toLeftOf="@id/center"
+            style="@style/touchboard"
+            />
+
+        <TextView
+            android:id="@+id/rightdown"
+            android:layout_below="@id/center"
+            android:layout_toRightOf="@id/center"
+            style="@style/touchboard"
+            android:stateListAnimator="@drawable/torightdown"
+            />
+
+        <TextView
+            android:background="#ffffffff"
+            android:id="@+id/leftdown"
+            android:layout_below="@id/center"
+            android:layout_toLeftOf="@id/center"
+            style="@style/touchboard"
+            android:stateListAnimator="@drawable/todownleft"
+            />
+
+
+</RelativeLayout>
